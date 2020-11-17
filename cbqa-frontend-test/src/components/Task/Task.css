@@ -1,0 +1,27 @@
+.Task-task{
+    border-radius: 4px;
+}
+
+.Task-taskHeader{
+    padding: 0.5em 1em;
+}
+
+.Task-taskBody{
+    padding: 0 1em 1em 1em;
+}
+
+.Task-task-completed{
+    border: 1px solid #00cca3;
+}
+
+.Task-taskHeader-completed{
+    background-color:  #00cca3;
+}
+
+.Task-task-pending{
+    border: 1px solid #ff4d4d;
+}
+
+.Task-taskHeader-pending{
+    background-color:  #ff4d4d;
+}

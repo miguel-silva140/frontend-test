@@ -1,9 +1,10 @@
 import React from 'react';
-import { render } from '@testing-library/react';
-import App from './App';
+import ReactDOM from 'react-dom'
+import { render, screen } from '@testing-library/react'
+import App from './App'
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+it("fetching API working", async () => {
+    const { getByText, findByText } = render(<App />)
+    expect(getByText(/Loading Data/i)).toBeInTheDocument()
+    expect(await findByText(/^UserId: 1$/i)).toBeInTheDocument() 
+})

@@ -1,0 +1,9 @@
+.Footer-footer{
+    height: 5em;
+    width: 100%;
+    background-color: #cce6ff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
